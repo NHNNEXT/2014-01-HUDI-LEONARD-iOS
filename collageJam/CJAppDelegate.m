@@ -7,6 +7,7 @@
 //
 
 #import "CJAppDelegate.h"
+#import "CJMainViewController.h"
 
 @implementation CJAppDelegate
 
@@ -16,6 +17,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

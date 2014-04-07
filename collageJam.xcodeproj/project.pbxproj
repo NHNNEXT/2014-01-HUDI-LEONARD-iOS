@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC3C42B918F29AA500573604 /* CJMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC3C42B818F29AA500573604 /* CJMainViewController.m */; };
 		F1381A6F18F2977300D8D4D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1381A6E18F2977300D8D4D4 /* Foundation.framework */; };
 		F1381A7118F2977300D8D4D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1381A7018F2977300D8D4D4 /* CoreGraphics.framework */; };
 		F1381A7318F2977300D8D4D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1381A7218F2977300D8D4D4 /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC3C42B718F29AA500573604 /* CJMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMainViewController.h; sourceTree = "<group>"; };
+		AC3C42B818F29AA500573604 /* CJMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMainViewController.m; sourceTree = "<group>"; };
 		F1381A6B18F2977300D8D4D4 /* collageJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collageJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1381A6E18F2977300D8D4D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F1381A7018F2977300D8D4D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC3C42B618F29A8300573604 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C42B718F29AA500573604 /* CJMainViewController.h */,
+				AC3C42B818F29AA500573604 /* CJMainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		F1381A6218F2977300D8D4D4 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		F1381A7418F2977300D8D4D4 /* collageJam */ = {
 			isa = PBXGroup;
 			children = (
+				AC3C42B618F29A8300573604 /* Controller */,
 				F1381A7D18F2977300D8D4D4 /* CJAppDelegate.h */,
 				F1381A7E18F2977300D8D4D4 /* CJAppDelegate.m */,
 				F1381A8018F2977300D8D4D4 /* Images.xcassets */,
@@ -242,6 +255,7 @@
 			files = (
 				F1381A7B18F2977300D8D4D4 /* main.m in Sources */,
 				F1381A7F18F2977300D8D4D4 /* CJAppDelegate.m in Sources */,
+				AC3C42B918F29AA500573604 /* CJMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +452,7 @@
 				F1381A9918F2977300D8D4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1381A9A18F2977300D8D4D4 /* Build configuration list for PBXNativeTarget "collageJamTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +461,7 @@
 				F1381A9C18F2977300D8D4D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
