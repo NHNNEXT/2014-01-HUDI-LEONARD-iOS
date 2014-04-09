@@ -52,9 +52,6 @@
     [self.navigationItem setLeftBarButtonItem:settingButton];
     
     UIBarButtonItem *createButton = [[UIBarButtonItem alloc] initWithTitle:@"Create" style:UIBarButtonItemStylePlain target:self action:@selector(createButtonTapped)];
-//    UIFont *settingFont = [UIFont systemFontOfSize:28.0];
-//    NSDictionary *settingDict = [[NSDictionary alloc] initWithObjectsAndKeys:settingFont, NSFontAttributeName, nil];
-//    [settingButton setTitleTextAttributes:settingDict forState:UIControlStateNormal];
     [self.navigationItem setRightBarButtonItem:createButton];
     
     
@@ -70,7 +67,31 @@
 
 - (void) createButtonTapped
 {
+    QBImagePickerController *imagePicker = [[QBImagePickerController alloc] init];
+    [imagePicker setDelegate:self];
+    [imagePicker setAllowsMultipleSelection:YES];
+    [imagePicker setFilterType:QBImagePickerControllerFilterTypePhotos];
+    [imagePicker setGroupTypes:@[
+                                 @(ALAssetsGroupAll)
+                                 ]];
     
+    // Since QBImagePicker is not subclass of NavigationController,
+    // it is required to use another NavigationController initalized with QBImagePicker
+    // to push into the self.navigationController.
+    UINavigationController *imageNavigator = [[UINavigationController alloc] initWithRootViewController:imagePicker];
+    [self presentViewController:imageNavigator animated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(QBImagePickerController *)picker
+{
+    [picker.selectedAssetURLs removeAllObjects];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets
+{
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    UIViewController *managingPhotoViewController = [[CJManagingPhotoViewController alloc] init];
 }
 
 @end

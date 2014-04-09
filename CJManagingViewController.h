@@ -1,5 +1,5 @@
 //
-//  CJManagingPhotoViewController.h
+//  CJManagingViewController.h
 //  collageJam
 //
 //  Created by Wonhyo Yi on 2014. 4. 9..
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJManagingPhotoViewController : UIView
+@interface CJManagingViewController : UIViewController
 
 @end

@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QBImagePickerController.h"
+#import "CJManagingPhotoViewController.h"
 
-@interface CJMainViewController : UIViewController
+@interface CJMainViewController : UIViewController <QBImagePickerControllerDelegate>
 
 @end

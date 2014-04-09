@@ -31,7 +31,7 @@
 		F147140618F4E7F800064956 /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F14713F818F4E7F800064956 /* QBImagePickerGroupCell.m */; };
 		F147140718F4E7F800064956 /* QBImagePickerThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = F14713FA18F4E7F800064956 /* QBImagePickerThumbnailView.m */; };
 		F147140818F4E7F800064956 /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = F14713FC18F4E7F800064956 /* QBImagePickerController.strings */; };
-		F147140B18F4F25500064956 /* CJManagingPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F147140A18F4F25500064956 /* CJManagingPhotoViewController.m */; };
+		F147140E18F4F5AF00064956 /* CJManagingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F147140D18F4F5AF00064956 /* CJManagingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,8 +84,8 @@
 		F14713FA18F4E7F800064956 /* QBImagePickerThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerThumbnailView.m; sourceTree = "<group>"; };
 		F14713FD18F4E7F800064956 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
 		F14713FE18F4E7F800064956 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
-		F147140918F4F25500064956 /* CJManagingPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJManagingPhotoViewController.h; sourceTree = "<group>"; };
-		F147140A18F4F25500064956 /* CJManagingPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJManagingPhotoViewController.m; sourceTree = "<group>"; };
+		F147140C18F4F5AF00064956 /* CJManagingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJManagingViewController.h; path = ../CJManagingViewController.h; sourceTree = "<group>"; };
+		F147140D18F4F5AF00064956 /* CJManagingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJManagingViewController.m; path = ../CJManagingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,8 +117,8 @@
 			children = (
 				AC3C42B718F29AA500573604 /* CJMainViewController.h */,
 				AC3C42B818F29AA500573604 /* CJMainViewController.m */,
-				F147140918F4F25500064956 /* CJManagingPhotoViewController.h */,
-				F147140A18F4F25500064956 /* CJManagingPhotoViewController.m */,
+				F147140C18F4F5AF00064956 /* CJManagingViewController.h */,
+				F147140D18F4F5AF00064956 /* CJManagingViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -351,9 +351,9 @@
 				F147140018F4E7F800064956 /* QBAssetsCollectionFooterView.m in Sources */,
 				F147140118F4E7F800064956 /* QBAssetsCollectionOverlayView.m in Sources */,
 				F147140218F4E7F800064956 /* QBAssetsCollectionViewCell.m in Sources */,
+				F147140E18F4F5AF00064956 /* CJManagingViewController.m in Sources */,
 				F147140718F4E7F800064956 /* QBImagePickerThumbnailView.m in Sources */,
 				F147140518F4E7F800064956 /* QBImagePickerController.m in Sources */,
-				F147140B18F4F25500064956 /* CJManagingPhotoViewController.m in Sources */,
 				F14713FF18F4E7F800064956 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				F147140618F4E7F800064956 /* QBImagePickerGroupCell.m in Sources */,
 				F147140318F4E7F800064956 /* QBAssetsCollectionViewController.m in Sources */,
