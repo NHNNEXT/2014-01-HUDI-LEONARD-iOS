@@ -9,6 +9,8 @@
 #import "CJAppDelegate.h"
 #import "CJMainViewController.h"
 
+#define RGB(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
+
 @implementation CJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,6 +20,18 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    UIViewController *mainViewController = [[CJMainViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: mainViewController];
+    [[UINavigationBar appearance] setBarTintColor:RGB(35, 153, 51)];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor],
+                                                           NSForegroundColorAttributeName,
+                                                           nil, nil,
+                                                           [UIFont systemFontOfSize:21.0], NSFontAttributeName, nil]];
+    
+    [self.window setRootViewController:navController];
     return YES;
 }
 
@@ -29,7 +43,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
