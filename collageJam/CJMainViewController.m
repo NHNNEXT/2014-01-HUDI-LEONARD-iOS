@@ -41,6 +41,7 @@
 {
     [super viewDidLoad];
     [self setTitle:@"News Feed"];
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     UIImage *helloLeonard = [UIImage imageNamed:@"helloLeonard.png"];
     UIImageView *helloLeonardView = [[UIImageView alloc] initWithImage:helloLeonard];
     [helloLeonardView setFrame:CGRectMake(98.5, (self.view.frame.size.height - helloLeonard.size.height) / 2, helloLeonard.size.width, helloLeonard.size.height)];
@@ -92,6 +93,7 @@
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     UIViewController *managingPhotoViewController = [[CJManagingPhotoViewController alloc] init];
+    [self.navigationController pushViewController:managingPhotoViewController animated:YES];
 }
 
 @end

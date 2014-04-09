@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "QBImagePickerController.h"
 #import "CJManagingPhotoViewController.h"
+#import "LSConstantVariable.h"
 
 @interface CJMainViewController : UIViewController <QBImagePickerControllerDelegate>
 

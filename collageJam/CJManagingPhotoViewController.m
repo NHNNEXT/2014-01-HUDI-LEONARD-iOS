@@ -1,18 +1,18 @@
 //
-//  CJManagingViewController.m
+//  CJManagingPhotoViewController.m
 //  collageJam
 //
 //  Created by Wonhyo Yi on 2014. 4. 9..
 //  Copyright (c) 2014년 LEONARD. All rights reserved.
 //
 
-#import "CJManagingViewController.h"
+#import "CJManagingPhotoViewController.h"
 
-@interface CJManagingViewController ()
+@interface CJManagingPhotoViewController ()
 
 @end
 
-@implementation CJManagingViewController
+@implementation CJManagingPhotoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setTitle:@"Photos"];
     // Do any additional setup after loading the view.
 }
 
