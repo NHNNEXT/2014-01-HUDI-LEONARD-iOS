@@ -8,20 +8,6 @@
 
 #import "CJMainViewController.h"
 
-#ifdef DEBUG
-#   define NSLog(...) NSLog(__VA_ARGS__)
-#   define NSLogFrame(obj) NSLog(@"X:%f Y:%f W:%f H:%f", obj.origin.x, obj.origin.y, obj.size.width, obj.size.height)
-#   define NSLogSize(obj) NSLog(@"Width:%f  Height:%f", obj.size.width, obj.size.height)
-#   define NSLogString(obj) NSLog(@"%@", obj)
-#   define NSLogObj(obj) NSLog(@"%@", obj)
-#else
-#   define NSLog(...)
-#   define NSLogFrame(obj)
-#   define NSLogSize(obj)
-#   define NSLogString(obj)
-#   define NSLogObj(obj)
-#endif
-
 @interface CJMainViewController ()
 
 @end
@@ -92,6 +78,9 @@
 - (void)imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    CJUserDataModel *userDataModel = [CJUserDataModel sharedInstance];
+    [userDataModel addPhotos:assets];
+    
     UIViewController *managingPhotoViewController = [[CJManagingPhotoViewController alloc] init];
     [self.navigationController pushViewController:managingPhotoViewController animated:YES];
 }

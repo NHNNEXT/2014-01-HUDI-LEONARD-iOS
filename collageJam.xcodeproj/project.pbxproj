@@ -33,6 +33,11 @@
 		F147140818F4E7F800064956 /* QBImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = F14713FC18F4E7F800064956 /* QBImagePickerController.strings */; };
 		F147141118F4F60C00064956 /* CJManagingPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141018F4F60C00064956 /* CJManagingPhotoViewController.m */; };
 		F147141518F4F6AF00064956 /* LSConstantVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141418F4F6AF00064956 /* LSConstantVariable.m */; };
+		F147141918F52DA100064956 /* CJUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141818F52DA100064956 /* CJUserDataModel.m */; };
+		F147141C18F52E0100064956 /* CJImageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141B18F52E0100064956 /* CJImageDataModel.m */; };
+		F1B8CD8F1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CD8E1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m */; };
+		F1B8CD911904CD0D00802B45 /* blackDeleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B8CD901904CD0D00802B45 /* blackDeleteButton.png */; };
+		F1FEE10918FBA73500A93F38 /* CJPhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE10818FBA73500A93F38 /* CJPhotoViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +94,15 @@
 		F147141018F4F60C00064956 /* CJManagingPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJManagingPhotoViewController.m; sourceTree = "<group>"; };
 		F147141318F4F6AF00064956 /* LSConstantVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSConstantVariable.h; sourceTree = "<group>"; };
 		F147141418F4F6AF00064956 /* LSConstantVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSConstantVariable.m; sourceTree = "<group>"; };
+		F147141718F52DA100064956 /* CJUserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUserDataModel.h; sourceTree = "<group>"; };
+		F147141818F52DA100064956 /* CJUserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUserDataModel.m; sourceTree = "<group>"; };
+		F147141A18F52E0100064956 /* CJImageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJImageDataModel.h; sourceTree = "<group>"; };
+		F147141B18F52E0100064956 /* CJImageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJImageDataModel.m; sourceTree = "<group>"; };
+		F1B8CD8D1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F1B8CD8E1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		F1B8CD901904CD0D00802B45 /* blackDeleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackDeleteButton.png; sourceTree = "<group>"; };
+		F1FEE10718FBA73500A93F38 /* CJPhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPhotoViewCell.h; sourceTree = "<group>"; };
+		F1FEE10818FBA73500A93F38 /* CJPhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPhotoViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,10 +175,12 @@
 		F1381A7418F2977300D8D4D4 /* collageJam */ = {
 			isa = PBXGroup;
 			children = (
+				F1FEE10618FBA72000A93F38 /* View */,
 				F147141218F4F69900064956 /* Utility */,
 				AC3C42B618F29A8300573604 /* Controller */,
 				F1381A7D18F2977300D8D4D4 /* CJAppDelegate.h */,
 				F1381A7E18F2977300D8D4D4 /* CJAppDelegate.m */,
+				F147141618F52D4E00064956 /* Model */,
 				F1381A8018F2977300D8D4D4 /* Images.xcassets */,
 				F1381A7518F2977300D8D4D4 /* Supporting Files */,
 			);
@@ -204,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				F14713E318F4E48A00064956 /* helloLeonard.png */,
+				F1B8CD901904CD0D00802B45 /* blackDeleteButton.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -257,6 +274,28 @@
 				F147141418F4F6AF00064956 /* LSConstantVariable.m */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		F147141618F52D4E00064956 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F147141718F52DA100064956 /* CJUserDataModel.h */,
+				F147141818F52DA100064956 /* CJUserDataModel.m */,
+				F147141A18F52E0100064956 /* CJImageDataModel.h */,
+				F147141B18F52E0100064956 /* CJImageDataModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F1FEE10618FBA72000A93F38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F1FEE10718FBA73500A93F38 /* CJPhotoViewCell.h */,
+				F1FEE10818FBA73500A93F38 /* CJPhotoViewCell.m */,
+				F1B8CD8D1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.h */,
+				F1B8CD8E1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +375,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B8CD911904CD0D00802B45 /* blackDeleteButton.png in Resources */,
 				F1381A7918F2977300D8D4D4 /* InfoPlist.strings in Resources */,
 				F1381A8118F2977300D8D4D4 /* Images.xcassets in Resources */,
 				F14713E418F4E48A00064956 /* helloLeonard.png in Resources */,
@@ -363,10 +403,14 @@
 				F1381A7F18F2977300D8D4D4 /* CJAppDelegate.m in Sources */,
 				F147140018F4E7F800064956 /* QBAssetsCollectionFooterView.m in Sources */,
 				F147140118F4E7F800064956 /* QBAssetsCollectionOverlayView.m in Sources */,
+				F147141918F52DA100064956 /* CJUserDataModel.m in Sources */,
 				F147140218F4E7F800064956 /* QBAssetsCollectionViewCell.m in Sources */,
+				F1FEE10918FBA73500A93F38 /* CJPhotoViewCell.m in Sources */,
 				F147141518F4F6AF00064956 /* LSConstantVariable.m in Sources */,
+				F147141C18F52E0100064956 /* CJImageDataModel.m in Sources */,
 				F147140718F4E7F800064956 /* QBImagePickerThumbnailView.m in Sources */,
 				F147140518F4E7F800064956 /* QBImagePickerController.m in Sources */,
+				F1B8CD8F1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				F147141118F4F60C00064956 /* CJManagingPhotoViewController.m in Sources */,
 				F14713FF18F4E7F800064956 /* QBAssetsCollectionCheckmarkView.m in Sources */,
 				F147140618F4E7F800064956 /* QBImagePickerGroupCell.m in Sources */,
