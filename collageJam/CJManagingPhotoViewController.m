@@ -83,7 +83,7 @@
                                                                            forIndexPath:indexPath];
     [photoCell.layer setBorderWidth:0];
     
-    CJImageDataModel *cellData = [_userImageModel objectAtIndex:indexPath.row];
+    CJUserImageData *cellData = [_userImageModel objectAtIndex:indexPath.row];
     [photoCell.repImageView setImage:cellData.thumbnailPhoto];
     [photoCell setBackgroundColor:[UIColor whiteColor]];
     
@@ -105,7 +105,7 @@
 {
     NSLog(@"%@", fromIndexPath);
     NSLog(@"%@", toIndexPath);
-    CJImageDataModel *object = [_userImageModel objectAtIndex:fromIndexPath.row];
+    CJUserImageData *object = [_userImageModel objectAtIndex:fromIndexPath.row];
     [_userImageModel removeObjectAtIndex:fromIndexPath.row];
     [_userImageModel insertObject:object atIndex:toIndexPath.row];
     
