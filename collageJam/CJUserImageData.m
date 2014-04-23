@@ -1,15 +1,14 @@
 //
-//  CJImageDataModel.m
+//  CJUserImageData.m
 //  collageJam
 //
-//  Created by Wonhyo Yi on 2014. 4. 9..
+//  Created by Wonhyo Yi on 2014. 4. 23..
 //  Copyright (c) 2014년 LEONARD. All rights reserved.
 //
 
-#import "CJImageDataModel.h"
+#import "CJUserImageData.h"
 
-@implementation CJImageDataModel
-
+@implementation CJUserImageData
 - (id) initWithURL:(NSURL *)theURL
               Date:(NSDate *)theDate
          Thumbnail:(UIImage *)theThumbnail
@@ -22,5 +21,4 @@
     }
     return self;
 }
-
 @end

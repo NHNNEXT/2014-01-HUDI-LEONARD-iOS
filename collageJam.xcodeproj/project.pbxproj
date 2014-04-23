@@ -34,9 +34,9 @@
 		F147141118F4F60C00064956 /* CJManagingPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141018F4F60C00064956 /* CJManagingPhotoViewController.m */; };
 		F147141518F4F6AF00064956 /* LSConstantVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141418F4F6AF00064956 /* LSConstantVariable.m */; };
 		F147141918F52DA100064956 /* CJUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141818F52DA100064956 /* CJUserDataModel.m */; };
-		F147141C18F52E0100064956 /* CJImageDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F147141B18F52E0100064956 /* CJImageDataModel.m */; };
 		F1B8CD8F1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CD8E1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m */; };
 		F1B8CD911904CD0D00802B45 /* blackDeleteButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F1B8CD901904CD0D00802B45 /* blackDeleteButton.png */; };
+		F1B8CD941907B3F400802B45 /* CJUserImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B8CD931907B3F400802B45 /* CJUserImageData.m */; };
 		F1FEE10918FBA73500A93F38 /* CJPhotoViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1FEE10818FBA73500A93F38 /* CJPhotoViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -96,11 +96,11 @@
 		F147141418F4F6AF00064956 /* LSConstantVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSConstantVariable.m; sourceTree = "<group>"; };
 		F147141718F52DA100064956 /* CJUserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUserDataModel.h; sourceTree = "<group>"; };
 		F147141818F52DA100064956 /* CJUserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUserDataModel.m; sourceTree = "<group>"; };
-		F147141A18F52E0100064956 /* CJImageDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJImageDataModel.h; sourceTree = "<group>"; };
-		F147141B18F52E0100064956 /* CJImageDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJImageDataModel.m; sourceTree = "<group>"; };
 		F1B8CD8D1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
 		F1B8CD8E1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		F1B8CD901904CD0D00802B45 /* blackDeleteButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackDeleteButton.png; sourceTree = "<group>"; };
+		F1B8CD921907B3F400802B45 /* CJUserImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUserImageData.h; sourceTree = "<group>"; };
+		F1B8CD931907B3F400802B45 /* CJUserImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUserImageData.m; sourceTree = "<group>"; };
 		F1FEE10718FBA73500A93F38 /* CJPhotoViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJPhotoViewCell.h; sourceTree = "<group>"; };
 		F1FEE10818FBA73500A93F38 /* CJPhotoViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJPhotoViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,8 +281,8 @@
 			children = (
 				F147141718F52DA100064956 /* CJUserDataModel.h */,
 				F147141818F52DA100064956 /* CJUserDataModel.m */,
-				F147141A18F52E0100064956 /* CJImageDataModel.h */,
-				F147141B18F52E0100064956 /* CJImageDataModel.m */,
+				F1B8CD921907B3F400802B45 /* CJUserImageData.h */,
+				F1B8CD931907B3F400802B45 /* CJUserImageData.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -407,8 +407,8 @@
 				F147140218F4E7F800064956 /* QBAssetsCollectionViewCell.m in Sources */,
 				F1FEE10918FBA73500A93F38 /* CJPhotoViewCell.m in Sources */,
 				F147141518F4F6AF00064956 /* LSConstantVariable.m in Sources */,
-				F147141C18F52E0100064956 /* CJImageDataModel.m in Sources */,
 				F147140718F4E7F800064956 /* QBImagePickerThumbnailView.m in Sources */,
+				F1B8CD941907B3F400802B45 /* CJUserImageData.m in Sources */,
 				F147140518F4E7F800064956 /* QBImagePickerController.m in Sources */,
 				F1B8CD8F1904C7A500802B45 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
 				F147141118F4F60C00064956 /* CJManagingPhotoViewController.m in Sources */,

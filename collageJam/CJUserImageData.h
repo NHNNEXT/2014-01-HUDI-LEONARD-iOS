@@ -1,14 +1,14 @@
 //
-//  CJImageDataModel.h
+//  CJUserImageData.h
 //  collageJam
 //
-//  Created by Wonhyo Yi on 2014. 4. 9..
+//  Created by Wonhyo Yi on 2014. 4. 23..
 //  Copyright (c) 2014년 LEONARD. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface CJImageDataModel : NSObject
+@interface CJUserImageData : NSObject
 @property (strong, nonatomic) NSURL *photoURL;
 @property (strong, nonatomic) NSDate *photoDate;
 @property (strong, nonatomic) UIImage *thumbnailPhoto;

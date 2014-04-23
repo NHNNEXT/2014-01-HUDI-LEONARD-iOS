@@ -10,10 +10,6 @@
 #import "CJUserDataModel.h"
 
 @interface CJPhotoViewCell : UICollectionViewCell
-{
-    CJUserDataModel *_userImageModel;
-    
-}
 
 @property (strong, nonatomic) UIImageView *repImageView;
 @property (strong, nonatomic) UIButton *deleteButton;

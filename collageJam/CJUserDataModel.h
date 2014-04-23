@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "CJImageDataModel.h"
+#import "CJUserImageData.h"
 
 @interface CJUserDataModel : NSObject
 @property (strong, nonatomic) NSMutableArray *userImageModel;

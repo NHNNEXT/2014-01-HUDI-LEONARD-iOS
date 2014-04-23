@@ -39,9 +39,7 @@
         NSDate *photoDate = [eachPhoto valueForProperty:ALAssetPropertyDate];
         UIImage *photoThumbnail = [UIImage imageWithCGImage:[eachPhoto aspectRatioThumbnail]];
         
-        CJImageDataModel *imageData = [[CJImageDataModel alloc] initWithURL:photoURL
-                                                                       Date:photoDate
-                                                                  Thumbnail:photoThumbnail];
+        CJUserImageData *imageData = [[CJUserImageData alloc] initWithURL:photoURL Date:photoDate Thumbnail:photoThumbnail];
         [_userImageModel addObject: imageData];
     }
 }

@@ -12,7 +12,6 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-    _userImageModel = [CJUserDataModel sharedInstance];
     self = [super initWithFrame:frame];
     if (self)
     {
